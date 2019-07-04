@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="bg-light mt-4 ">
+    <div class="container mt-4 mx-auto">
+        <h1 class="display-3">Welcome</h1>
+
+        <form>
+            <div class="form-group">
+                <label for="">
+                    <p class="lead ml-2">Enter the location</p>
+                </label>
+                <div class="row">
+                    <input type="text" class="form-control col-6 ml-4">
+                    <button class="btn-primary btn-inline ml-2" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+        <div>
+            <p class="display-3" id="message-1"></p>
+            <h1 class="display-4" id="message-2"></h1>
+
+            <p class="lead ml-2 mt-3" id="message-3"></p>
+        </div>
+    </div>
+    <script src='app.js'></script>
+</body>
+
+</html>
