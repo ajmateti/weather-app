@@ -1,7 +1,7 @@
 const express = require('express')
 const geocode = require('./geocode')
 const app = express()
-
+const PORT = process.env.PORT || 3000
 app.use(express.static('./public'))
 app.get('/weather', (req, res) => {
     console.log('hey')
@@ -16,6 +16,6 @@ app.get('/weather', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Listening on port 3000')
+app.listen(PORT, () => {
+    console.log('Listening on port ' + PORT)
 })
